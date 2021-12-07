@@ -1,4 +1,4 @@
-human_resources>sqlplus SYS/password@localhost:1521/XEPDB1 AS SYSDBA
+C:\Scripts\db-sample-schemas-21.1\human_resources>sqlplus SYS/password@localhost:1521/XEPDB1 AS SYSDBA
 SQL> connect sys as sysdba
 Enter password:
 Connected.
@@ -6,12 +6,14 @@ Connected.
 SQL> show con_name
 
 SQL> show pdbs
-SQL> alter session set container =XEPDB1;
+SQL> alter session set container = XEPDB1;
 
 SQL> create user hr identified by hr;
 
 SQL> @hr_main.sql 
-<-- C:/Scripts/db-sample-schemas-21.1/human_resources-->
+<-- Replace __SUB__CWD__ in above with
+C:/Scripts/db-sample-schemas-21.1/human_resources
+ie; path_to_your_human_resources folder. Ther should be no spaces in the path.-->
 
 
 
