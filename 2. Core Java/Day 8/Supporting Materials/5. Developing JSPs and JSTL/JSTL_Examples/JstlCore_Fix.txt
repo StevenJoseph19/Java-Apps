@@ -1,0 +1,2 @@
+	<c:set var="languageCode" value="${(header['accept-language'].split('-'))[0]}"/>  
+			<c:out value="${languageCode}"></c:out>
