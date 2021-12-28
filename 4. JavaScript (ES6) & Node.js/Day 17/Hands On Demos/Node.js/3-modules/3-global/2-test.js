@@ -1,3 +1,3 @@
-require('./2-set');
+require("./2-set");
 
 console.log(answer);

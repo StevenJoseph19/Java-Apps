@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const files = [".bash_profile", ".npmrc"];
+const files = [".bash_profile", "zzz.txt", ".npmrc"];
 
 files.forEach((file) => {
   console.log(process.env.HOME);
