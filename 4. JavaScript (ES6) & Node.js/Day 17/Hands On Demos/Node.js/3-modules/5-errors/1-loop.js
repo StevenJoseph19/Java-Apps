@@ -1,13 +1,8 @@
-const path = require("path");
 const fs = require("fs");
 
-const files = [".bash_profile", "zzz.txt", ".npmrc"];
+const files = ["./1-loop.js", "./zzz.js", "./2-try.js"];
 
 files.forEach((file) => {
-  console.log(process.env.HOME);
-  const filePath = path.resolve(process.env.HOME, file);
-
-  console.log(filePath);
-  const data = fs.readFileSync(filePath);
+  const data = fs.readFileSync(file);
   console.log("File data is", data);
 });

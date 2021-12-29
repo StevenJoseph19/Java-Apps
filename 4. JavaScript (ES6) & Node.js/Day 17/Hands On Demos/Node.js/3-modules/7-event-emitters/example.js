@@ -7,10 +7,15 @@ const myEmitter = new EventEmitter();
 
 // myEmitter.emit("TEST_EVENT");
 
+setImmediate(() => {
+  myEmitter.emit("TEST_EVENT");
+});
+
 myEmitter.on("TEST_EVENT", () => {
   console.log("TEST_EVENT was fired");
 });
 myEmitter.on("TEST_EVENT", () => {
   console.log("TEST_EVENT was fired");
 });
-myEmitter.emit("TEST_EVENT");
+
+// myEmitter.emit("TEST_EVENT");
